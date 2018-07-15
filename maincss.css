@@ -1,0 +1,138 @@
+body {
+    
+    font-family: Arial;
+    margin: 0;
+    clear: both;
+    
+}
+.logo img {
+    width: 30%;
+    margin: 30px 0px 0px 300px;
+}
+nav {
+    margin: 0px 0px 40px 250px;
+    background-color: #1a1717;
+    padding: 14px;
+    width: 1200px;
+    border-radius: 15px;
+    --webkit--border-radius: 15px;
+	--moz--border-radius: 15px;
+    
+    
+    
+    
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    
+    
+    
+    
+}
+ul li {
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color: #3970bf;
+    opacity: .90;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+   
+
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    
+}
+ul li a:hover{
+    background-color: #1a1717;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+
+.picmoto img {
+    background-size: cover;
+    width: 1800px;
+    
+    }
+h1{
+    font-family: Brush Script MT, Brush Script;
+    font-size: 50px;
+    letter-spacing:1px;
+    position: absolute;
+    font-weight: 300;
+    top: 50%;
+    font-style: normal;
+    left: 15%;
+    color: white;
+}
+
+h2{
+    font-family: Helvetica, sans-serif	;
+    font-size: 30px;
+    letter-spacing:1px;
+    position: absolute;
+    font-weight: 300;
+    top: 110%;
+    
+    left: 15%;
+    right: 15%;
+    color: white;
+}
+.box{
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    
+    font-size: 6em;
+    font-family: sans-serif;
+    color: #fff;
+    
+    
+    text-shadow: 0 2px 2px rgba(0,0,0,.5)
+    
+}
+.word{
+    display: inline-block;
+    
+}
+.s1 { margin: 00px 00px 00px 350px}
+.s2 { margin: 00px 00px 00px 550px}
+.s3 { margin: 00px 00px 00px 200px}
+.s4 { margin: 00px 00px 00px 650px}
+
+
+.word strong 
+{
+    position: absolute;
+    animation: animate 10s linear infinite;
+    opacity: 0;
+    white-space: nowrap;
+    text-align: center;
+
+}
+
+
+@keyframes animate
+{
+    0%{opacity: 0;transform: translateY(-80px)}
+    2%{opacity: 1;transform: translateY(0px)}
+    18%{opacity: 1;transform: translateY(0px)}
+    20%{opacity: 0;transform: translateY(50px)}
+    20%{opacity: 0;transform: translateY(50px)}
+   
+}
+.word strong:nth-child(1){animation-delay: 0s}
+.word strong:nth-child(2){animation-delay: 2s}
+.word strong:nth-child(3){animation-delay: 4s}
+.word strong:nth-child(4){animation-delay: 6s}
