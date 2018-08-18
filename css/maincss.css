@@ -1,0 +1,347 @@
+/* Start our framwork */
+
+body{
+    font-family: 'Cairo', sans-serif;
+    height: 3000px
+}
+
+.container{
+    width: 1200px;
+    margin: auto 
+}
+
+.text-center{text-align: center}
+
+.upper{text-transform: uppercase}
+
+.main-color{
+    color: #3970bf
+}
+
+.main-background{
+    background-color: #3970bf
+}
+
+/* End our framwork */
+
+
+
+
+
+/* start BarMenu */
+
+.col{
+    float: right;
+    margin: -7px 50px 0px 5px;
+    color: #497ac1; 
+    cursor: pointer;
+}
+
+.bar {
+    
+   display: block;
+   height: 5px;
+   width: 50px;
+   background: black;
+   margin: 10px auto;
+
+ }
+ 
+.con:hover .bar,.special-con:hover .bar {
+  background-color: #3970bf;
+}
+
+ .bar {
+   -webkit-transition: all .7s ease;
+   -moz-transition: all .7s ease;
+   -ms-transition: all .7s ease;
+   -o-transition: all .7s ease;
+   transition: all .7s ease;
+ }
+ 
+ .con:hover .arrow-top-r {
+   -webkit-transform: rotateZ(-45deg) translateY(11px);
+   -moz-transform: rotateZ(-45deg) translateY(11px);
+   -ms-transform: rotateZ(-45deg) translateY(11px);
+   -o-transform: rotateZ(-45deg) translateY(11px);
+   transform: rotateZ(-45deg) translateY(11px);
+   width: 25px;
+ }
+ 
+ .con:hover .arrow-middle-r {
+   -webkit-transform: translateX(25px);
+   -moz-transform: translateX(25px);
+   -ms-transform: translateX(25px);
+   -o-transform: translateX(25px);
+   transform: translateX(25px);
+ }
+ 
+ .con:hover .arrow-bottom-r {
+   -webkit-transform: rotateZ(45deg) translateY(-11px);
+   -moz-transform: rotateZ(45deg) translateY(-11px);
+   -ms-transform: rotateZ(45deg) translateY(-11px);
+   -o-transform: rotateZ(45deg) translateY(-11px);
+   transform: rotateZ(45deg) translateY(-11px);
+   width: 25px;
+ }
+
+/* End BarMenu */
+
+
+
+
+
+
+
+/* Start Header */
+.logo img {
+    width: 30%;
+    position:absolute;
+    margin: .7% 0% 0% -40%
+}
+
+.header .navbar{
+    overflow: hidden;
+    padding: 20px 0;
+    
+}
+
+.header .navbar .link{
+    float: right;
+    margin: 20px 10px 0 0;
+    
+}
+
+.header {
+    background: url(/Images/redmoto.png);
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -background-size:cover;
+    color: white;
+    
+}
+
+.header .overlay {
+    background: rgba(49, 55, 61, .2);
+    width: 100%;
+    height: 100%
+}
+
+
+@-webkit-keyframes mouve1 {
+    0%  {transform:translate3d(0px,50px,0px)}
+    
+    25% {transform:translate3d(0,0px,0)}
+  
+   50% {transform:translate3d(0,25px,0)}
+  
+   100% {transform:translate3d(0,0,0)}
+}
+
+
+@-webkit-keyframes mouve2 {
+   0%   {transform:translate3d(50px,0,0)}
+    
+    25% {transform:translate3d(0,0,0)}
+  
+   50% {transform:translate3d(25px,0,0)}
+  
+   100% {transform:translate3d(0,0,0)}
+}
+
+
+@-webkit-keyframes mouve3 {
+   0%   {transform:  scale(.5);}
+    50% {transform:scale(1.2);}
+  100% {transform:scale(1);}
+}
+
+
+
+
+ul{
+    display: none;
+    float: right;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Cairo', sans-serif;
+    cursor:default
+ 
+}
+
+ul li {
+    margin: 1px 0px 0px 0px;
+    float: left;
+    width: 100px;
+    height: 40px;
+    background-color: #3970bf;
+    opacity: .90;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    font-weight:400;
+    
+
+}
+
+ul li a{
+    
+    text-decoration: none;
+    color: white;
+    display: block;
+    
+    
+}
+
+ul li a:hover{
+    background-color: #1a1717;
+}
+
+.mouve1 li{
+    display: none;
+    -webkit-animation:mouve1 .3s linear alternate
+}
+
+.mouve2 li{
+    display: none;
+    -webkit-animation:mouve2 .3s linear alternate
+
+}
+
+.mouve3 li{
+    display: none;
+    -webkit-animation:mouve3 .3s linear alternate
+
+}
+
+ul li:hover ul li{
+    display: block;
+}
+
+
+
+h1{
+   font-family: 'cookieregular';
+    font-weight: normal;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 2px 2px rgba(0,0,0,.5);
+    margin: 13% 0% 5% 0%
+}
+
+.box{
+    font-size: 4em;
+    color: white;
+    text-shadow: 0 2px 2px rgba(0,0,0,.5);
+    margin-right: 200%;
+    margin-bottom: 15%;
+}
+
+.s1 { margin:    0px 00px 00px 300px}
+.s2 { margin:    0px 00px 00px 420px}
+.s3 { margin:    0px 00px 00px 178px}
+.s4 { margin:    0px 00px 00px 450px}
+
+strong {   
+    position:absolute;
+    float: left;
+    animation: animate 10s linear infinite;
+    opacity: 0;
+    white-space: nowrap;
+    text-align: center;
+    
+    
+
+}
+
+
+@keyframes animate
+{
+    0%{opacity: 0;transform: translateY(-80px)}
+    2%{opacity: 1;transform: translateY(0px)}
+    18%{opacity: 1;transform: translateY(0px)}
+    20%{opacity: 0;transform: translateY(50px)}
+    20%{opacity: 0;transform: translateY(50px)}
+   
+}
+.word strong:nth-child(1){animation-delay: 0s}
+.word strong:nth-child(2){animation-delay: 2s}
+.word strong:nth-child(3){animation-delay: 4s}
+.word strong:nth-child(4){animation-delay: 6s}
+
+
+h2{
+    
+   font-family: 'Cairo';font-size: 22px;
+    font-size: 25px;
+    letter-spacing:1px;
+    
+    font-weight: 300;
+    text-shadow: 0 2px 2px rgba(0,0,0,.5);
+    font-weight:600;
+    color: white;
+    
+    margin: 8% 8% 4% 8%
+}
+
+.container .buttons button{
+    background: transparent;
+    padding: 10px 0;
+    width: 180px;
+    font-size: 16px;
+    border: 1.5px solid #fff;
+    margin: 0 8px;
+    color: white;
+    -webkid-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    cursor:pointer
+    
+      
+}
+.container .buttons{
+    margin-bottom: 30px
+}
+.container .buttons button:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold
+ 
+}
+
+
+.overlay{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+ }
+
+#arrow{
+border: 2px solid white;
+border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    line-height: 25px
+}
+
+#arrow:hover{
+
+border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    color: black;
+    background-color: white;
+    -webkid-transition: all 1s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+/* End Header*/
+
+
+
+
+
+
