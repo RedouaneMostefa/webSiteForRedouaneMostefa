@@ -28,6 +28,10 @@ body{
 
 
 
+
+
+
+
 /* start BarMenu */
 
 .col{
@@ -93,7 +97,10 @@ body{
 
 
 
+
+
 /* Start Header */
+
 .logo img {
     width: 30%;
     position:absolute;
@@ -102,14 +109,12 @@ body{
 
 .header .navbar{
     overflow: hidden;
-    padding: 20px 0;
-    
+    padding: 20px 0;   
 }
 
 .header .navbar .link{
     float: right;
-    margin: 20px 10px 0 0;
-    
+    margin: 20px 10px 0 0;    
 }
 
 .header {
@@ -118,8 +123,7 @@ body{
     -moz-background-size:cover;
     -o-background-size:cover;
     -background-size:cover;
-    color: white;
-    
+    color: white;   
 }
 
 .header .overlay {
@@ -158,8 +162,6 @@ body{
 }
 
 
-
-
 ul{
     display: none;
     float: right;
@@ -168,7 +170,6 @@ ul{
     list-style: none;
     font-family: 'Cairo', sans-serif;
     cursor:default
- 
 }
 
 ul li {
@@ -182,17 +183,13 @@ ul li {
     text-align: center;
     font-size: 15px;
     font-weight:400;
-    
-
 }
 
 ul li a{
     
     text-decoration: none;
     color: white;
-    display: block;
-    
-    
+    display: block;   
 }
 
 ul li a:hover{
@@ -219,8 +216,6 @@ ul li a:hover{
 ul li:hover ul li{
     display: block;
 }
-
-
 
 h1{
    font-family: 'cookieregular';
@@ -256,33 +251,29 @@ strong {
 
 }
 
-
 @keyframes animate
+
 {
     0%{opacity: 0;transform: translateY(-80px)}
     2%{opacity: 1;transform: translateY(0px)}
     18%{opacity: 1;transform: translateY(0px)}
     20%{opacity: 0;transform: translateY(50px)}
-    20%{opacity: 0;transform: translateY(50px)}
-   
+    20%{opacity: 0;transform: translateY(50px)}  
 }
+
 .word strong:nth-child(1){animation-delay: 0s}
 .word strong:nth-child(2){animation-delay: 2s}
 .word strong:nth-child(3){animation-delay: 4s}
 .word strong:nth-child(4){animation-delay: 6s}
 
-
-h2{
-    
+h2{ 
    font-family: 'Cairo';font-size: 22px;
     font-size: 25px;
     letter-spacing:1px;
-    
     font-weight: 300;
     text-shadow: 0 2px 2px rgba(0,0,0,.5);
     font-weight:600;
-    color: white;
-    
+    color: white; 
     margin: 8% 8% 4% 8%
 }
 
@@ -298,19 +289,18 @@ h2{
     -moz-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     cursor:pointer
-    
-      
 }
+
 .container .buttons{
     margin-bottom: 30px
 }
+
 .container .buttons button:hover{
     background-color: white;
     color: black;
     font-weight: bold
  
 }
-
 
 .overlay{
     bottom: 0;
@@ -322,24 +312,193 @@ h2{
 #arrow{
 border: 2px solid white;
 border-radius: 50%;
-    height: 25px;
-    width: 25px;
-    line-height: 25px
+    height: 30px;
+    width: 30px;
+    line-height: 25px;
+    cursor:pointer
 }
 
 #arrow:hover{
 
-border-radius: 50%;
-    height: 25px;
-    width: 25px;
-    line-height: 25px;
     color: black;
     background-color: white;
     -webkid-transition: all 1s ease-in-out;
     -moz-transition: all .8s ease-in-out;
     transition: all .8s ease-in-out;
-/* End Header*/
+    }
 
+/* End Header*/
+    
+
+
+
+
+
+
+
+
+    
+/* Start Features      */
+
+.Features h3{
+    font-family: 'Cairo', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    
+    
+}
+
+.p1{
+    
+    font-family: 'Cairo', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 5% 10% 4% 10%   
+}
+
+/*  End Features      */
+
+
+
+
+/*  Start Text Over An Image      */
+
+.textOverImage{
+    
+    
+    position:relative;
+    width:484px;
+    height:300px;
+    float:left;
+    margin: 0%  0% 0% 10% ;
+    background-size:100%;
+    background-position:center;
+    transition:0.5s;
+    overflow:hidden;
+    border-radius:4px;
+    box-shadow:0 0 4px #000;
+  }
+
+.textOverImage:before{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    transform:translateY(90%);/*use transform:translateY(100%); to remove footer*/
+    background-color:rgba(0,0,0,0.3);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-title);
+    transition:0.5s 0.1s;
+    color:#fff;
+    text-align: center;
+    font-weight:bold;
+    font-size:1.8em;
+}
+
+.textOverImage:after{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    color:#fff;
+    padding:8px;
+    content:attr(data-text);
+    transition:0.5s;
+    padding-top:2em;
+    margin-top:8px;
+    transform:translateY(100%);
+    opacity:0;
+      
+  }
+  
+.textOverImage:hover:after{
+    transform:translateY(0);
+    transition:0.5s 0.1s;
+    opacity:1;
+      font-size: 25px;
+      line-height: 32px
+  }
+
+.textOverImage:hover:before{
+    transform:translateY(0);
+    padding:8px;
+    background-color:rgba(0,0,0,0.6);
+    transition:0.5s;
+}
+
+/*  End Text Over An Image      */
+
+
+.WHAT{
+    font-size: 50px;
+    margin:  30%  0% 2% 0%;
+    text-align: center;
+    
+}
+.Skills{
+    padding: 40px 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #d1d2d3;
+    margin: 0%;
+    color: #3e3e3e;
+    text-transform: uppercase
+}
+
+.Skills .boxx{
+    width: 15%;
+    float: left;
+    margin:5% -5% 0% 11%;
+  
+}
+.Skills .boxx i{
+    color: #3970bf;
+    
+    border: 1px solid #777;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    -webkid-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    
+}
+.Skills .boxx i:hover{
+    background-color: #3970bf;
+    color: white;
+    border: 1px solid #d1d2d3;
+    
+}
+.Skills .boxx h4{
+    color: #777
+}
+.Skills .boxx p{
+    text-transform: none;
+    font-family: sans-serif;
+    text-align: justify;
+    line-height: 20px;
+    color: #777
+    
+}
+.triangl{ 
+    
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+    height: 0px;
+    width: 0px;
+    margin: -40px 0px 0px 668px;
+    padding: 0px;
+}
 
 
 
